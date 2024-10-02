@@ -15,7 +15,7 @@ curl -sSf https://rye.astral.sh/get | RYE_INSTALL_OPTION="--yes" bash
 # echo "Adding 'rye' to the PATH for the non-root user"
 echo 'source "$HOME/.rye/env"' >> ~/.bashrc
 
-EOF
+# EOF
 
 # echo "Adding 'rye' to the PATH for the root user"
 # echo 'source "/home/$_REMOTE_USER/.rye/env"' >> ~/.bashrc
