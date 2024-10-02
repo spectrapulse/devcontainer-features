@@ -1,13 +1,14 @@
 {
     "name": "Rye",
-    "version": "1.3.2",
+    "version": "1.3.3",
     "id": "rye",
     "description": "A Hassle-Free Python Experience",
     "installsAfter": [
         "ghcr.io/devcontainers/features/python"
     ],
     "containerEnv": {
-        "RYE_NO_AUTO_INSTALL": "1"
+        "RYE_NO_AUTO_INSTALL": "1",
+        "UV_LINK_MODE": "copy"
     },
     "options": {
         "bashCompletion": {
