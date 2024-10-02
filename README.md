@@ -12,7 +12,7 @@ A Hassle-Free Python Experience
 
 ```json
 "features": {
-    "ghcr.io/e-gineering/devcontainer-features/rye:1": {}
+    "ghcr.io/spectrapulse/devcontainer-features/rye:1": {}
 }
 ```
 
