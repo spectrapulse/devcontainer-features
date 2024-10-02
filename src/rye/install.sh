@@ -23,7 +23,11 @@ echo 'source "/home/$_REMOTE_USER/.rye/env"' >> ~/.bashrc
 if [ "$BASHCOMPLETION" = "true" ]; then
   echo "Activating bash completion for 'rye'"
   # https://rye.astral.sh/guide/installation/#shell-completion
-  /home/$_REMOTE_USER/.rye/shims/rye self completion >/etc/bash_completion.d/rye
+  if [ "$_REMOTE_USER" = "root"]; then
+    /root/.rye/shims/rye self completion >/etc/bash_completion.d/rye
+  else
+    /home/$_REMOTE_USER/.rye/shims/rye self completion >/etc/bash_completion.d/rye
+  fi
 else
   echo "Skipping setting up bash completion for 'rye'"
   echo "The value of BASHCOMPLETION is: $BASHCOMPLETION"
